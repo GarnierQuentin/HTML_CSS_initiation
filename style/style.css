@@ -1,0 +1,249 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{background-image:url('../images/fondu_noir_bleu.png');
+    background-size: cover;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif;
+}
+
+a:hover {
+    text-decoration: none;
+    background-color:blue;
+    color: black;
+}
+
+a{
+    display: block;
+    color: black;
+}
+
+.navbar li{
+    display: inline-block;
+    margin-left: 10%;
+}
+
+.navbar ul{
+    width: 60%;
+    font-size: 2vw;
+}
+
+.logo{
+    width: 25%;
+}
+
+.navbar img{
+    width: 100%;
+    height: auto;
+}
+
+.navbar{
+    background-color: white;
+    border-bottom: 10px solid black;
+    padding-left: 1%;
+    padding-right: 1%;
+    display: flex;
+    justify-content: space-between; /*aligner horizontalement*/
+    align-items: center; /*aligner verticallement*/
+    /*flex-wrap: wrap;*/
+}
+
+.navbar a:hover{
+    color : blue;
+    background-color: white;
+}
+
+
+
+ul{
+    list-style: circle;
+}
+
+.intro{color: black ; text-align : center ;  font-size: 2.9vw; 
+    background-color: rgb(188, 220, 247);
+    margin: auto;
+    margin-top: 1%;
+    width: 90%;  /* largeur en pixels du bloc */
+    padding: 0% ; /* marges intérieures du bloc */
+    border: 5px solid black; /* bordure :  un trait plein vert */
+    box-shadow: 25px 25px 50px black;
+    border-radius: 20px;
+}
+
+.image{
+    margin: auto;
+    margin-top: 3%;
+    width: 40vw; 
+
+}
+
+.image img {
+    width: 100%; height: 100%;
+}
+
+
+
+
+
+.bloc1{
+    display: flex;
+    margin-top: 20%;
+    align-items: center;
+}
+
+
+.equipement{background-color: whitesmoke;
+    font-size: 2vw;
+    text-align: left;
+    width: 50%;
+    height: auto;
+    box-shadow: 10px 10px 75px rgb(175, 200, 212);
+    opacity: 0.8;
+    padding: 5%;
+    margin-left: 5%;
+    border-radius: 25%;
+}
+
+.image_equipements{
+    opacity: 0.75;
+    width: 35%; 
+    height: 35%;
+    margin-left: 5%;
+}
+
+.image_equipements img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+.bloc2{
+    display: flex;
+    align-items: center;
+    background-color: rgb(242, 242, 242);
+    width: 85%;
+    margin-left: 7.5%;
+    border-radius: 10%;
+    margin-top: 20%;
+}
+
+
+.details{
+    font-size: 2vw;
+    text-align: right;
+    width: 50%;
+    height: auto;
+    padding: 1%;
+    align-items: right;
+    padding: 5%;
+    border-left: 5px ridge grey;
+    border-radius: 35%;
+    border-width: 10%;
+}
+
+.image_inside{
+    opacity: 0.9;
+    width: 45%; 
+    height: 45%;
+    margin-left: 3%;
+    margin-right: 3%;
+
+}
+
+.image_inside img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+
+.caracteristiques{
+    font-size: 2vw;
+    background-color: white;
+    border: 15px ridge rgb(74, 143, 233);
+    width: 66%;
+    padding: 3%;
+    margin-top: 20%;
+    text-align: center;
+    margin-bottom: 20%;
+    box-shadow: 10px 10px 75px rgb(29, 46, 53);
+    margin-left: 17%;
+}
+
+.exemple{
+    text-align: center;
+    font-size: 3vw;
+    margin-bottom: 10%;
+}
+
+.exemple video{
+    width: 50%;
+}
+
+.produit1{
+    margin-top: 1%;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.produit1 video{
+    width: 100%;
+    height: auto;
+}
+
+
+
+.achat a{
+    background-color: black;
+    border-radius: 50px;
+    padding: 20px;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    margin-left: 25%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 50%;
+    height: auto;
+    font-size: 3vw;
+}
+
+.achat a:hover{
+    background-color: white;
+    color: rgb(29, 24, 24);
+    border: 1px solid black;
+}
+
+.produit2{
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 1%;
+}
+
+.produit2 video{
+    width: 100%;
+    height: auto;
+}
+
+
+@media screen and (max-width : 800px){
+    body{
+        background-color : black;
+    }
+
+    .equipement{
+        width: 100%;
+    }
+}
