@@ -49,7 +49,6 @@ a{
     display: flex;
     justify-content: space-between; /*aligner horizontalement*/
     align-items: center; /*aligner verticallement*/
-    /*flex-wrap: wrap;*/
 }
 
 .navbar a:hover{
@@ -63,7 +62,7 @@ ul{
     list-style: circle;
 }
 
-.intro{color: black ; text-align : center ;  font-size: 2.9vw; 
+.intro{color: black ; text-align : center ;  font-size: 2.8vw; 
     background-color: rgb(188, 220, 247);
     margin: auto;
     margin-top: 1%;
@@ -141,12 +140,10 @@ ul{
     text-align: right;
     width: 50%;
     height: auto;
-    padding: 1%;
     align-items: right;
     padding: 5%;
     border-left: 5px ridge grey;
     border-radius: 35%;
-    border-width: 10%;
 }
 
 .image_inside{
@@ -182,10 +179,14 @@ ul{
     margin-left: 17%;
 }
 
+.caracteristiques li{
+    list-style: none;
+}
+
 .exemple{
     text-align: center;
     font-size: 3vw;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
 }
 
 .exemple video{
@@ -238,12 +239,97 @@ ul{
 }
 
 
-@media screen and (max-width : 800px){
-    body{
-        background-color : black;
+@media screen and (max-width : 915px){
+
+    .navbar li{
+        display: inline-block;
+        margin-left: 4%;
+    }
+    
+    .navbar ul{
+        width: 90%;
+        font-size: 4vw;
     }
 
-    .equipement{
-        width: 100%;
+    .intro{font-size: 6vw; 
+        margin-top: 5%;
+        width: 92%;
+        border-radius: 20px;
     }
+
+    .image{
+        margin: auto;
+        margin-top: 10%;
+        width: 75%; 
+    }
+
+
+
+    .bloc1{
+        margin-top: 40%;
+        flex-direction: column;
+    }
+    
+    
+    .equipement{
+        font-size: 4.5vw;
+        width: 90%;
+        height: auto;
+        padding: 10%;
+        margin-left: 0%;
+        border-radius: 10%;
+    }
+    
+    .image_equipements{
+        width: 60%; 
+        height: 60%;
+        margin-left: 0%;
+    }
+
+
+
+    .bloc2{
+        width: 90%;
+        margin-left: 5%;
+        border-radius: 10%;
+        margin-top: 40%;
+        flex-direction: column;
+    }
+    
+    .details{
+        font-size: 4.5vw;
+        text-align: center;
+        width: 100%;
+        padding: 10%;
+        border-left: 0px ridge grey;
+        border-top: 5px ridge grey;
+        border-radius: 35%;
+    }
+    
+    .image_inside{
+        margin-top: 5%;
+        width: 90%; 
+        height: 90%;
+    }
+
+
+
+    .caracteristiques{
+        font-size: 4.5vw;
+        width: 90%;
+        padding: 3%;
+        margin-top: 40%;
+        margin-bottom: 40%;
+        margin-left: 3.5%;
+    }
+
+    .exemple{
+        font-size: 4.5vw;
+        margin-bottom: 10%;
+    }
+    
+    .exemple video{
+        width: 90%;
+    }
+
 }
