@@ -22,6 +22,10 @@ a{
     color: black;
 }
 
+ul{
+    list-style: circle;
+}
+
 .navbar li{
     display: inline-block;
     margin-left: 10%;
@@ -45,7 +49,6 @@ a{
     background-color: white;
     border-bottom: 10px solid black;
     padding-left: 1%;
-    padding-right: 1%;
     display: flex;
     justify-content: space-between; /*aligner horizontalement*/
     align-items: center; /*aligner verticallement*/
@@ -58,30 +61,27 @@ a{
 
 
 
-ul{
-    list-style: circle;
-}
 
 .intro{color: black ; text-align : center ;  font-size: 2.8vw; 
     background-color: rgb(188, 220, 247);
     margin: auto;
     margin-top: 1%;
     width: 90%;  /* largeur en pixels du bloc */
-    padding: 0% ; /* marges intérieures du bloc */
     border: 5px solid black; /* bordure :  un trait plein vert */
     box-shadow: 25px 25px 50px black;
     border-radius: 20px;
 }
 
-.image{
+.image_enceinte{
     margin: auto;
     margin-top: 3%;
     width: 40vw; 
 
 }
 
-.image img {
-    width: 100%; height: 100%;
+.image_enceinte img {
+    width: 100%; 
+    height: 100%;
 }
 
 
@@ -134,18 +134,6 @@ ul{
     margin-top: 20%;
 }
 
-
-.details{
-    font-size: 2vw;
-    text-align: right;
-    width: 50%;
-    height: auto;
-    align-items: right;
-    padding: 5%;
-    border-left: 5px ridge grey;
-    border-radius: 35%;
-}
-
 .image_inside{
     opacity: 0.9;
     width: 45%; 
@@ -160,6 +148,17 @@ ul{
     height: 100%;
 }
 
+.details{
+    font-size: 2vw;
+    text-align: right;
+    width: 50%;
+    height: auto;
+    align-items: right;
+    padding: 5%;
+    border-left: 5px ridge grey;
+    border-radius: 35%;
+}
+
 
 
 
@@ -170,13 +169,13 @@ ul{
     font-size: 2vw;
     background-color: white;
     border: 15px ridge rgb(74, 143, 233);
-    width: 66%;
+    width: 70%;
     padding: 3%;
     margin-top: 20%;
     text-align: center;
     margin-bottom: 20%;
     box-shadow: 10px 10px 75px rgb(29, 46, 53);
-    margin-left: 17%;
+    margin-left: 15%;
 }
 
 .caracteristiques li{
@@ -201,7 +200,7 @@ ul{
 
 .produit1 video{
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 
 
@@ -235,11 +234,11 @@ ul{
 
 .produit2 video{
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 
 
-@media screen and (max-width : 915px){
+@media screen and (max-width : 810px){
 
     .navbar li{
         display: inline-block;
@@ -257,7 +256,7 @@ ul{
         border-radius: 20px;
     }
 
-    .image{
+    .image_enceinte{
         margin: auto;
         margin-top: 10%;
         width: 75%; 
@@ -320,7 +319,7 @@ ul{
         padding: 3%;
         margin-top: 40%;
         margin-bottom: 40%;
-        margin-left: 3.5%;
+        margin-left: 5%;
     }
 
     .exemple{
@@ -330,6 +329,32 @@ ul{
     
     .exemple video{
         width: 90%;
+    }
+
+
+
+    .produit1{
+        margin-top: 10%;
+        width: 100%;
+        margin-left: 0%;
+    }
+
+
+
+    .achat a{
+        border-radius: 12.5%;
+        padding: 10%;
+        margin-top: 20%;
+        margin-bottom: 20%;
+        font-size: 6vw;
+    }
+
+
+
+    .produit2{
+        width: 100%;
+        margin-left: 0%;
+        margin-bottom: 25%;
     }
 
 }
